@@ -18,6 +18,7 @@ form{
    margin-top:20px;
    display:flex;
    justify-content: space-between;
+   gap:10px;
 }
 input{
    width: 60%; 
@@ -29,7 +30,7 @@ input{
 input::placeholder{
    font-size: 12px;
 }
-button{
+.subscribe_button{
    width:33%;
    background-color: #EE3134;
    color:#fff;
@@ -37,4 +38,13 @@ button{
    border: none;
    border-radius: 3px;
    cursor: pointer;
+   transition: all 0.4s;
+}
+.subscribe_button:hover{
+   background-color: #ff0000;
+   box-shadow: 0px 0px 20px #EE3134;
+}
+.subscribe_button:active{
+   transform: scale(0.95);
+   transition: transform 0.4s;
 }
